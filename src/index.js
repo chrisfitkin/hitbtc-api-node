@@ -1,4 +1,5 @@
 import WebsocketClient from './websocketClient';
+import WebsocketClientV2 from './websocketClientV2';
 import axios from 'axios';
 import crypto from 'crypto';
 import get from 'lodash/fp/get';
@@ -21,6 +22,7 @@ const uri = (path, params) =>
 
 export default class HitBTC {
   static WebsocketClient = WebsocketClient;
+  static WebsocketClientV2 = WebsocketClientV2;
 
   constructor({ key, secret, isDemo = false } = { isDemo: false }) {
     this.key = key;

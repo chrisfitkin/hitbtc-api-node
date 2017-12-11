@@ -10,6 +10,10 @@ var _websocketClient = require('./websocketClient');
 
 var _websocketClient2 = _interopRequireDefault(_websocketClient);
 
+var _websocketClientV = require('./websocketClientV2');
+
+var _websocketClientV2 = _interopRequireDefault(_websocketClientV);
+
 var _axios = require('axios');
 
 var _axios2 = _interopRequireDefault(_axios);
@@ -155,3 +159,4 @@ class HitBTC {
 }
 exports.default = HitBTC;
 HitBTC.WebsocketClient = _websocketClient2.default;
+HitBTC.WebsocketClientV2 = _websocketClientV2.default;
